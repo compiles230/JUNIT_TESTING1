@@ -170,7 +170,7 @@ private NewTelephoneCompany ntc;
 	
 		ntc.setStartTime(1800);
 		ntc.setDuration(10);
-		expResult = 208.0;
+		expResult = 208.00;
 		ntc.computeCharge();
 		assertTrue("A call starting at " + ntc.getStartTime() + " for a duration of " + ntc.getDuration()+ " "  + expResult,expResult==ntc.computeCharge());
 	
